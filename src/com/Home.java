@@ -118,7 +118,7 @@ public class Home extends JFrame {
 		panel.add(logo);
 		logo.setForeground(new Color(255, 255, 255));
 		logo.setBackground(new Color(255, 255, 255));
-		ImageIcon img1 = new ImageIcon(this.getClass().getResource("/blood.png"));
+		ImageIcon img1 = new ImageIcon(this.getClass().getResource("resources/blood.png"));
 		Image originalImage = img1.getImage();
 		Image scaledImage = originalImage.getScaledInstance(80, 64, Image.SCALE_SMOOTH);
 		ImageIcon scaledIcon = new ImageIcon(scaledImage);

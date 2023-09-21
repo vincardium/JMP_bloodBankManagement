@@ -1,0 +1,15 @@
+>> TO CREATE THE DATABASE :
+
+[1] Connect the SQL in MySQL workbench to localhost (127.0.0.1_3306_root_root)
+[2] Create schema/database (it will be the database folder)
+[3] Make a table in it, with all column details (it will be the .idb file in it)
+[4] Make a SQL file to insert all data inside table (using MySQL language)
+
+!! (The schema/database folders are already created as 'search' & 'donor') !!
+!! (You just need to access it) !!
+
+>> TO ACCESS THE DATABASE :
+
+[1] 'search' folder is for Search.java sample data, to check for available blood_types
+    'donor' folder is for Donate.java sample data, to store donor information
+[2] Copy the database folders, as it is, in "C:\ProgramData\MySQL\MySQL Server 8.0\Data"

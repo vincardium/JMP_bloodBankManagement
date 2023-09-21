@@ -119,7 +119,7 @@ public class Donate extends JFrame {
 
                 // Establish a database connection
                 try {
-                    Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/donors", "root", "root");
+                    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/donors", "root", "root");
                     DonorDAO donorDAO = new DonorDAO(connection);
 
                     // Insert the donor into the database

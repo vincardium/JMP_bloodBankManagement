@@ -58,10 +58,15 @@ public class Search extends JFrame {
 
         cityChoice = new Choice();
         cityChoice.add("Select City");
-        cityChoice.add("Kurla");
+        cityChoice.add("Bandra");
+        cityChoice.add("Borivali");
         cityChoice.add("Chembur");
+        cityChoice.add("Ghatkopar");
+        cityChoice.add("Kurla");
+        cityChoice.add("Panvel");
+        cityChoice.add("Shahad");
         cityChoice.add("Sion");
-        cityChoice.add("Ghatkoper");
+        cityChoice.add("Thane");
         cityChoice.add("Vashi");
         cityChoice.setForeground(Color.BLACK);
         cityChoice.setBounds(112, 199, 104, 34);
@@ -107,15 +112,15 @@ public class Search extends JFrame {
                     ResultSet resultSet = preparedStatement.executeQuery();
 
                     StringBuilder table = new StringBuilder();
-                    table.append("\n                 City            |       ID        |     Blood Type\n");
+                    table.append("\n                 ID            |       City        |     Blood Type\n");
                     table.append("         ----------------------------------------------------------\n");
 
                     while (resultSet.next()) {
-                        String city = resultSet.getString("city");
                         String id = resultSet.getString("id");
+                        String city = resultSet.getString("city");
                         String bloodType = resultSet.getString("blood_type");
 
-                        table.append("                 ").append(city).append("          |        ").append(id).append("         |         ").append(bloodType).append("\n");
+                        table.append("                 ").append(id).append("          |        ").append(city).append("         |         ").append(bloodType).append("\n");
                     }
 
                     resultSet.close();
