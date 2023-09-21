@@ -5,7 +5,8 @@
 [3] Make a table in it, with all column details (it will be the .idb file in it)
 [4] Make a SQL file to insert all data inside table (using MySQL language)
 
-!! (The schema/database folders are already created as 'search' & 'donor') !!
+!! (The schema/database folders are already created as 'search' & 'donor' in src/db/) !!
+!! (The sql files are also created as 'search_blood' & 'donor_details' in src/db/) !!
 !! (You just need to access it) !!
 
 >> TO ACCESS THE DATABASE :
